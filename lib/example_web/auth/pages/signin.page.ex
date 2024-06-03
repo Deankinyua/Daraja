@@ -62,9 +62,9 @@ defmodule ExampleWeb.SignInPage do
     socket
   end
 
-  defp build_form(_, socket, _) do
-    socket
-  end
+  # defp build_form(_, socket, _) do
+  #   socket
+  # end
 
   @impl true
   def render(assigns) do
