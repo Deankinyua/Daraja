@@ -38,6 +38,7 @@ defmodule ExampleWeb.CoreComponents do
   """
   attr :id, :string, required: true
   attr :show, :boolean, default: false
+  attr :can_remove, :boolean, default: true
   attr :on_cancel, JS, default: %JS{}
   slot :inner_block, required: true
 

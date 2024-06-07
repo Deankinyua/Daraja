@@ -34,6 +34,9 @@ defmodule ExampleWeb.Router do
     ash_authentication_live_session :authentication_required,
       on_mount: {ExampleWeb.LiveUserAuth, :live_user_required} do
       live "/promoters", BaLive
+      # live "/forms", FormLive, :index
+      # live "/forms/new", FormLive, :new
+      # live "/forms/:id/edit", FormLive, :edit
     end
 
     # add these lines -->
